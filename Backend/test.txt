@@ -46,3 +46,9 @@ result
   "phone": "+234",
   "bio": "bio"
 }
+
+{
+  "name": "Jay Stones",
+  "email": "Jaaystones@gmail.com",
+  "password": "Stonebones"
+}

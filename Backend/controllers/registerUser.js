@@ -1,5 +1,6 @@
 import User from "../models/userModel.js";
 import asynchandler from "express-async-handler";
+import genToken from "./tokenGen.js";
 
 
 const registerUser =  asynchandler(async (req, res) => {
@@ -26,7 +27,20 @@ const registerUser =  asynchandler(async (req, res) => {
         name,
         email,
         password
-    })
+    });
+    
+    //generate token
+    const token = genToken(user._id);
+
+    //send Http-only cookies
+    res.cookie("token", token, {
+        path: "/",
+        httpOnly: true,
+        expires: new Date(Date.now() + 1000 * 24 * 60 * 60 ), // expires 1day after
+        sameSite: "none",
+        secure: true
+    });
+
     if (user) {
         const { _id, name, email, photo, phone, bio } = user;
         res.status(201).json({
@@ -35,12 +49,16 @@ const registerUser =  asynchandler(async (req, res) => {
             email,
             photo,
             phone,
-            bio
+            bio,
+            token
     });
     } else {
         res.status(400)
         throw new Error ("Invalid user");
-    }  
+    }
+    
+   
+
 
 });
 

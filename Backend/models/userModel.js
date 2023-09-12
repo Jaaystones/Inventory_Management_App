@@ -41,7 +41,7 @@ const userschema = mongoose.Schema({
     { timestamps: true, }
 );
 
-// encrypt password before saving it to dB
+// encrypt password every time you access it before saving it to dB
 
 userschema.pre('save', async function (next) {
     const user = this;
