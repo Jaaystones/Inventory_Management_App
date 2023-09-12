@@ -1,0 +1,48 @@
+TEST 1
+{
+  "name": "Jay",
+  "email": "User@gmail.com",
+  "password": "Stone1234"
+}
+result
+{
+  "_id": "6500c65d492493bb132f4856",
+  "name": "Jay",
+  "email": "User@gmail.com",
+  "photo": "https://i.ibb.co/4pDNDk1/avatar.png",
+  "phone": "+234",
+  "bio": "bio"
+}
+
+
+TEST 2
+{
+  "name": "Stone Bricks",
+  "email": "User1@gmail.com",
+  "password": "Stone12345"
+}
+result  
+{
+  "_id": "6500d5e884a0b683391c73c4",
+  "name": "Stone Bricks",
+  "email": "User1@gmail.com",
+  "photo": "https://i.ibb.co/4pDNDk1/avatar.png",
+  "phone": "+234",
+  "bio": "bio"
+}
+
+TEST 3
+{
+  "name": "Stone kegs",
+  "email": "User2@gmail.com",
+  "password": "Stonebow"
+}
+result
+{
+  "_id": "6500dddf0a95f045cd7b8f81",
+  "name": "Stone kegs",
+  "email": "User2@gmail.com",
+  "photo": "https://i.ibb.co/4pDNDk1/avatar.png",
+  "phone": "+234",
+  "bio": "bio"
+}
