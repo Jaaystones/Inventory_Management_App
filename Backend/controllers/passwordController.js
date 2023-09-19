@@ -127,5 +127,4 @@ const resetPassword = asyncHandler( async(req, res) => {
 
 });
 
-
 export { updatePassword, forgotPassword, resetPassword };
