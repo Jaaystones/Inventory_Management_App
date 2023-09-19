@@ -55,7 +55,4 @@ userschema.pre('save', async function (next) {
     next();
 });
 
-//hash the password
-
-
 export default mongoose.model('User', userschema);
