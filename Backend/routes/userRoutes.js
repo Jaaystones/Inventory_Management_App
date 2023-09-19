@@ -11,7 +11,7 @@ import { updatePassword, forgotPassword, resetPassword } from '../controllers/pa
 
 const router = express.Router();
 
-
+//Routes
 router.post('/register', registerUser);
 router.post('/login', loginUser);
 router.get('/getuser', Secure, getUser);
@@ -21,6 +21,5 @@ router.patch('/updateuser', Secure, updateUser);
 router.patch('/updatepassword', Secure, updatePassword);
 router.post('/forgotpassword',  forgotPassword);
 router.put('/resetpassword/:resetToken',  resetPassword);
-
 
 export default router; 
