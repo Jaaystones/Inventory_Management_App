@@ -66,6 +66,4 @@ const logOut = asynchandler( async (req, res) => {
     return res.status(200).json({ message: "Sucessfully logged out"});
 });
 
-
-
 export  { loginUser, logOut };
