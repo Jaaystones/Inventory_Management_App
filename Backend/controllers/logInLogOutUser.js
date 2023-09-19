@@ -10,7 +10,7 @@ const loginUser = asynchandler( async(req, res) => {
     //validate required fields
     if (!email || !password) {
         res.status(400);
-        throw new Error("Please provide email and password");
+        throw new Error("Please provide correct email and password");
     }
     
     //find user by email

@@ -50,5 +50,15 @@ result
 {
   "name": "Jay Stones",
   "email": "Jaaystones@gmail.com",
-  "password": "Stonebones"
+  "password": "Stonebones1"
+}
+{
+	"email": "User10@gmail.com",
+  "password": "Joelstones"
+}
+
+{
+  "name": "Paul Jones",
+  "email": "Paul12@gmail.com",
+  "password": "Joels1234567"
 }
