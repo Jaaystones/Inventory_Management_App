@@ -28,6 +28,11 @@ const productSchema = mongoose.Schema({
         required: [true, "Please select a price"], 
         trim: true
     },
+    quantity: {
+        type: Number,
+        required: [true, "Please select a quantity"], 
+        trim: true
+    },
     description: {
         type: String,
         required: true,
