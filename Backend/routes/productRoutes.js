@@ -16,5 +16,4 @@ router.get('/:id', Secure, getProduct);
 router.delete('/:id', Secure, deleteProduct);
 
 
-
 export default router;
