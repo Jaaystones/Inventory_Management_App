@@ -3,7 +3,6 @@ import asyncHandler from "express-async-handler";
 import cloudinary from "../config/cloudConfig.js";
 import { fileSizeFormatter } from "../utils/uploads.js";
 
-
 // Create a new Product
 const createProduct = asyncHandler(async (req, res) => {
     const { name, sku, category, quantity, price, description } = req.body;
