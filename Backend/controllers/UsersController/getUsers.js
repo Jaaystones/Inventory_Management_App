@@ -3,7 +3,7 @@ import asynchandler from "express-async-handler";
 
 const getUser = asynchandler(async (req, res) => {
 
-    const user = await User.findById(req.user._id);
+const user = await User.findById(req.user._id);
 
     //error handling for user
     if(user){
