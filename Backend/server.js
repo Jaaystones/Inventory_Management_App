@@ -5,6 +5,7 @@ import dotenv from "dotenv";
 import bodyParser from "body-parser";
 import { connectDB } from "./config/DbConn.js";
 import userRouter from "./routes/userRoutes.js";
+import productRouter from "./routes/productRoutes.js";
 import errorHandler from "./middleware/errorMiddleware.js";
 import cookieParser from "cookie-parser";
 
@@ -24,6 +25,7 @@ app.use(bodyParser.json());
 
 // routes middleware
 app.use("/api/users", userRouter);
+app.use("/api/products", productRouter);
 
 
 //route

@@ -1,10 +1,10 @@
 import express from 'express';
-import registerUser from '../controllers/registerUser.js';
+import registerUser from '../controllers/UsersController/registerUser.js';
 import { loginUser, logOut }  from '../controllers/logInLogOutUser.js';
-import getUser from '../controllers/getUsers.js';
+import getUser from '../controllers/UsersController/getUsers.js';
 import Secure from '../middleware/authMiddleware.js';
 import loggedInStatus from '../controllers/loggedInStatus.js';
-import updateUser from '../controllers/updateUser.js';
+import updateUser from '../controllers/UsersController/updateUser.js';
 import { updatePassword, forgotPassword, resetPassword } from '../controllers/passwordController.js';
 
 
