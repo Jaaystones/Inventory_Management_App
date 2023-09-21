@@ -3,7 +3,6 @@ import asyncHandler from "express-async-handler";
 
 
 const updateUser = asyncHandler( async(req, res) => {
-
     //find user by user_id
     const user = await User.findById(req.user._id);
     
