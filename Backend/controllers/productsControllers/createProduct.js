@@ -1,6 +1,6 @@
-import Product from "../models/productModel.js";
+import Product from "../../models/productModel.js";
 import asyncHandler from "express-async-handler";
-import cloudinary from "../config/cloudConfig.js";
+import cloudinary from "../../config/cloudConfig.js";
 import { fileSizeFormatter } from "../utils/uploads.js";
 
 // Create a new Product
