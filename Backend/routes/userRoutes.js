@@ -8,7 +8,6 @@ import updateUser from '../controllers/UsersController/updateUser.js';
 import { updatePassword, forgotPassword, resetPassword } from '../controllers/passwordController.js';
 
 
-
 const router = express.Router();
 
 //Routes

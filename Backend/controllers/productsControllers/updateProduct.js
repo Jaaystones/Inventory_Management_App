@@ -3,8 +3,6 @@ import asyncHandler from "express-async-handler";
 import cloudinary from "../../config/cloudConfig.js";
 import { fileSizeFormatter } from "../../utils/uploads.js";
 
-
-
 //Update a product
 const updateProduct = asyncHandler( async (req, res) => {
     // deconstruct updated columns from schema
