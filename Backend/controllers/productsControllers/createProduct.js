@@ -4,8 +4,6 @@ import cloudinary from "../config/cloudConfig.js";
 import { fileSizeFormatter } from "../utils/uploads.js";
 
 
-
-
 // Create a new Product
 const createProduct = asyncHandler(async (req, res) => {
     const { name, sku, category, quantity, price, description } = req.body;
@@ -39,8 +37,8 @@ const createProduct = asyncHandler(async (req, res) => {
             fileSize: fileSizeFormatter(req.file.size, 2),
          };
          // Log successful upload for debugging
-        console.log("File uploaded successfully:", uploadFile);
-        console.log(req.file.path);
+        //console.log("File uploaded successfully:", uploadFile);
+        //console.log(req.file.path);
         }catch(error) {
             // Log the error for debugging
             console.error("Error during Cloudinary upload:", error);
@@ -64,14 +62,7 @@ const createProduct = asyncHandler(async (req, res) => {
     res.status(201).json({
         success: true,
         data: product,
-    });
-        
-    
+    });    
 });
-
-
-
-
-
 
 export default createProduct;
