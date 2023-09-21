@@ -36,7 +36,6 @@ app.get("/", (req, res) => {
 //error handler
 app.use(errorHandler);
 
-
 //start server
 mongoose.connection.once('open', () => {
     console.log('DB connected');
