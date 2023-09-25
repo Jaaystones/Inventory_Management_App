@@ -47,103 +47,103 @@ This README provides an overview of the Inventory App's file structure and the f
 
 Folder Structure
 # config/
-**dbcon.js
+**dbcon.js**
 This file contains the configuration settings for the Mongoose server, which is responsible for connecting to and interacting with the database.
 
-cloudconfig.js
+**cloudconfig.js**
 Here, you'll find configuration settings for the Cloudinary server. Cloudinary is used for managing and storing image assets related to the inventory.
 
 # controllers/
 This section contains all the controller functions for the application.
 
 ## productsControllers/
-createProducts.js
+**createProducts.js**
 Controller for creating products with photo upload functionality to Cloudinary.
 
-deleteProducts.js
+**deleteProducts.js**
 Controller for deleting products.
 
-getProducts.js
+**getProducts.js**
 Controller for retrieving all products and individual products attached to a specific user.
 
-updateProducts.js
+**updateProducts.js**
 Controller for updating products.
 
 ## UsersController/
-getUsers.js
+**getUsers.js**
 Controller for retrieving user information from the database.
 
-registerUser.js
+**registerUser.js**
 Controller for registering a new user.
 
-updateUser.js
+**updateUser.js**
 Controller for updating user information.
 
-logInLogOut.js
+**logInLogOut.js**
 Controller for logging in and logging out a user.
 
-loggedInStatus.js
+**loggedInStatus.js**
 Controller for displaying the login status of a user.
 
-passwordController.js
+**passwordController.js**
 Controller for resetting and updating user password credentials.
 
-tokenGen.js
+**tokenGen.js**
 Controller for generating a unique token for each user.
 
 # middleware/
 This section contains the middleware functions for creating and authenticating users and products.
 
-authMiddleware.js
+**authMiddleware.js**
 Middleware for creating and authenticating users.
 
-errorMiddleware.js
+**errorMiddleware.js**
 Middleware for error handling.
 
 # models/
 This section contains the schema for creating users, products, and tokens.
 
-productModel.js
+**productModel.js**
 Schema for creating a new product.
 
-tokenModel.js
+**tokenModel.js**
 Schema for creating a new token.
 
-userModel.js
+**userModel.js**
 Schema for creating a new user.
 
 # routes/
 This section contains the API routes for the inventory app, defining the HTTP endpoints and associating them with the corresponding controller methods for CRUD operations.
 
-productRoutes.js
+**productRoutes.js**
 API routes for products.
 
-userRoutes.js
+**userRoutes.js**
 API routes for users.
 
 # utils/
 This section contains utility functions needed to upload photos and send emails.
 
-emailSender.js
+**emailSender.js**
 Functionality for sending emails to users for password reset or contact information.
 
-uploads.js
+**uploads.js**
 Formatting for uploading photos.
 
-server.js
+**server.js**
 The main application file where the server is initialized and configured. It sets up the Express.js server, connects to the database using Mongoose, and defines middleware and routes.
 
-package.json
+**package.json**
 Lists the project's dependencies and provides scripts for running the application.
 
 # Getting Started
 To get started with the Inventory App, follow these steps:
 ```
-Install the required dependencies by running npm install.
-Configure the database connection in config/dbcon.js.
-Configure the Cloudinary settings in config/cloudconfig.js if you intend to use image uploads. Save the configuration in your .env file.
-Start the server by running npm start or nodemon server.js.
-Access the application in your web browser by navigating to the appropriate URL (e.g., http://localhost:6000).
+[x]Install the required dependencies by running npm install.
+[x]Configure the database connection in config/dbcon.js.
+[x]Configure the Cloudinary settings in config/cloudconfig.js if you intend to use image uploads. Save the configuration in your .env file.
+[x]Start the server by running npm start or nodemon server.js.
+[x]Access the application in your web browser by navigating to the appropriate URL (e.g., http://localhost:6000).
 ```
 
 # Usage
