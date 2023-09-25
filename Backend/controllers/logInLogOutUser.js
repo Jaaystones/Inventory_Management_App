@@ -38,12 +38,11 @@ const loginUser = asynchandler( async(req, res) => {
         });
     }
     if (user && passwordIsValid){
-        const { _id, name, email, password, photo, bio } = user;
+        const { _id, name, email, photo, bio } = user;
         res.status(200).json({
             _id,
             name,
             email,
-            password,
             photo,
             bio,
             token,
