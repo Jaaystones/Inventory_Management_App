@@ -3,7 +3,6 @@ import asynchandler from "express-async-handler";
 import bcrypt from "bcryptjs";
 import genToken from "./tokenGen.js";
 
-
 const loginUser = asynchandler( async(req, res) => {
     const { email, password } = req.body;
 
