@@ -9,9 +9,9 @@ This README provides an overview of the Inventory App's file structure and the f
 ## File Structure
 
 ```
-- [config/](config)
-  - [dbcon.js](dbconjs)
-  - [cloudconfig.js](cloudconfigjs)
+- [config/](https://github.com/Jaaystones/Inventory_ManagementApp/tree/main/Backend/config)
+  - [dbcon.js](https://github.com/Jaaystones/Inventory_Management_App/blob/main/Backend/config/DbConn.js)
+  - [cloudconfig.js]([cloudconfigjs](https://github.com/Jaaystones/Inventory_Management_App/blob/main/Backend/config/DbConn.js))
 - [controllers/](controllers)
   - [productsControllers/](productscontrollers)
     - [createProducts.js](createproductsjs)
