@@ -46,17 +46,17 @@ This README provides an overview of the Inventory App's file structure and the f
 ```
 
 Folder Structure
-# config/
+# Config/
 **dbcon.js**
 This file contains the configuration settings for the Mongoose server, which is responsible for connecting to and interacting with the database.
 
 **cloudconfig.js**
 Here, you'll find configuration settings for the Cloudinary server. Cloudinary is used for managing and storing image assets related to the inventory.
 
-# controllers/
+# Controllers/
 This section contains all the controller functions for the application.
 
-## productsControllers/
+## ProductsControllers/
 **createProducts.js**
 Controller for creating products with photo upload functionality to Cloudinary.
 
@@ -91,7 +91,7 @@ Controller for resetting and updating user password credentials.
 **tokenGen.js**
 Controller for generating a unique token for each user.
 
-# middleware/
+# Middleware/
 This section contains the middleware functions for creating and authenticating users and products.
 
 **authMiddleware.js**
@@ -100,7 +100,7 @@ Middleware for creating and authenticating users.
 **errorMiddleware.js**
 Middleware for error handling.
 
-# models/
+# Models/
 This section contains the schema for creating users, products, and tokens.
 
 **productModel.js**
@@ -112,7 +112,7 @@ Schema for creating a new token.
 **userModel.js**
 Schema for creating a new user.
 
-# routes/
+# Routes/
 This section contains the API routes for the inventory app, defining the HTTP endpoints and associating them with the corresponding controller methods for CRUD operations.
 
 **productRoutes.js**
@@ -121,7 +121,7 @@ API routes for products.
 **userRoutes.js**
 API routes for users.
 
-# utils/
+# Utils/
 This section contains utility functions needed to upload photos and send emails.
 
 **emailSender.js**
@@ -139,11 +139,12 @@ Lists the project's dependencies and provides scripts for running the applicatio
 # Getting Started
 To get started with the Inventory App, follow these steps:
 ```
-[x]Install the required dependencies by running npm install.
-[x]Configure the database connection in config/dbcon.js.
-[x]Configure the Cloudinary settings in config/cloudconfig.js if you intend to use image uploads. Save the configuration in your .env file.
-[x]Start the server by running npm start or nodemon server.js.
-[x]Access the application in your web browser by navigating to the appropriate URL (e.g., http://localhost:6000).
+[x] Install the required dependencies by running npm install.
+[x] Configure the database connection in config/dbcon.js.
+[x] Configure the Cloudinary settings in config/cloudconfig.js if you intend to use image uploads. Save the configuration in your .env file.
+[x] Start the server by running npm start or nodemon server.js.
+[x] Access the application in your web browser by navigating to the appropriate URL (e.g., http://localhost:6000).
+
 ```
 
 # Usage
