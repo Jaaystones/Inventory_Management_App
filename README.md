@@ -8,7 +8,7 @@ This README provides an overview of the Inventory App's file structure and the f
 
 ## File Structure
 
-```
+
 - [config/](https://github.com/Jaaystones/Inventory_ManagementApp/tree/main/Backend/config)
   - [dbcon.js](https://github.com/Jaaystones/Inventory_Management_App/blob/main/Backend/config/DbConn.js)
   - [cloudconfig.js]([cloudconfigjs](https://github.com/Jaaystones/Inventory_Management_App/blob/main/Backend/config/DbConn.js))
@@ -43,7 +43,7 @@ This README provides an overview of the Inventory App's file structure and the f
 - [package.json](packagejson)
 - [README.md](readmemd)
 
-```
+
 
 Folder Structure
 # Config/
