@@ -6,6 +6,7 @@ import bodyParser from "body-parser";
 import { connectDB } from "./config/DbConn.js";
 import userRouter from "./routes/userRoutes.js";
 import productRouter from "./routes/productRoutes.js";
+import contactRoute from "./routes/contactRoute.js";
 import errorHandler from "./middleware/errorMiddleware.js";
 import cookieParser from "cookie-parser";
 
@@ -26,6 +27,7 @@ app.use(bodyParser.json());
 // routes middleware
 app.use("/api/users", userRouter);
 app.use("/api/products", productRouter);
+app.use("/api/contactus", contactRoute);
 
 
 //route
