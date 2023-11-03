@@ -16,9 +16,9 @@ const sendEmail = async (subject, message, send_to, sent_from,  reply_to) => {
             user,
             pass, 
         },
-        // tls: {
-        //     rejectUnauthorized: false
-        // }
+        tls: {
+            rejectUnauthorized: false
+        }
     });
 
      // Option for sending email
