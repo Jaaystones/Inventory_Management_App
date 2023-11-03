@@ -11,7 +11,7 @@ const sendEmail = async (subject, message, send_to, sent_from,  reply_to) => {
         service,
         host,
         port: 587,
-        secure: false, 
+        secure: true, 
         auth: {
             user,
             pass, 
