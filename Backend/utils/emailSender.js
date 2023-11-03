@@ -6,14 +6,14 @@ const sendEmail = async (subject, message, send_to, sent_from,  reply_to) => {
     const user= process.env.Email_User // generated sender mail user
     const pass= process.env.Email_Pass // generated
     const service= process.env.Email_Service // generated service
-    const  host= process.env.Email_Host // generated host
+    const  host= process.env.Email_Host // generated host link
     const transporter = nodemailer.createTransport({
         service,
         host,
         port: 587,
         secure: false, 
         auth: {
-            user, 
+            user,
             pass, 
         },
         tls: {
