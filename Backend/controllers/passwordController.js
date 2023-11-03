@@ -68,7 +68,7 @@ const forgotPassword = asyncHandler( async (req, res) => {
         expiresAt: Date.now() + 20 * (60 * 1000),//20 mins
     }).save(); 
 
-const resetUrl = `{process.env.CLIENT_URL}/resetpassword/${resetToken}`;
+const resetUrl = `${process.env.CLIENT_URL}/resetpassword/${resetToken}`;
 
 
 // Reset Email
@@ -84,7 +84,7 @@ const message = `
 `;
 const subject = "Password Reset Request";
 const send_to = user.email;
-const sent_from = process.env.EMAIL_USER;
+const sent_from ='Jaaystones@gmail.com' ;
 
 // error handling
 try {
