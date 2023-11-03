@@ -10,15 +10,15 @@ const sendEmail = async (subject, message, send_to, sent_from,  reply_to) => {
     const transporter = nodemailer.createTransport({
         service,
         host,
-        port: 465,
-        secure: true, 
+        port: 587,
+        secure: false, 
         auth: {
             user,
             pass, 
         },
-        tls: {
-            rejectUnauthorized: false
-        }
+        // tls: {
+        //     rejectUnauthorized: false
+        // }
     });
 
      // Option for sending email
